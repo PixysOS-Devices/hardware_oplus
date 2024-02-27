@@ -56,6 +56,10 @@ class KeyHandler(context: Context) : DeviceKeyHandler {
         )
     }
 
+    override fun onPocketStateChanged(inPocket: Boolean) {
+       
+    }
+
     override fun handleKeyEvent(event: KeyEvent): KeyEvent? {
         if (event.action != KeyEvent.ACTION_DOWN) {
             return event
